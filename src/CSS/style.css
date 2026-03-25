@@ -1,53 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Anuphan", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Anuphan", sans-serif;
 }
 
-.home-page {
-    height: 110vh;
+header, footer {
+  height: 60px;
+
+  background-image: url("../Image/hf.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.body {
+body {
+  margin: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
-  align-items: center;
+
+  background-color: #442f2a;
+  overflow-x: hidden;
+}
+
+.fullpage {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
   justify-content: center;
-  flex-shrink: 0;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  padding-top: 5vh;
+  align-items: center;
+  flex-direction: column;
 }
 
-.homehead {
-  color: #fffbdc;
+.headwei {
+  color: #FFFBDC;
+  font-size: 2.5rem;
+  font-family: "Anuphan", sans-serif;
+  font-weight: bold;
   text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  position: relative;
+  cursor: default;
 }
 
-.cover {
-  flex-shrink: 0;
-  height: 33vh;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 378/430;
+.coverwei {
+  height: 350px;
 }
 
-.div2 {
-  color: #fffbdc;
+.textwei {
+  color: #FFFBDC;
+  font-size: 1rem;
+  font-family: "Anuphan", sans-serif;
   text-align: center;
-  font-size: 1em;
-  font-weight: 400;
-  position: relative;
+  cursor: default;
+
+  margin-bottom: 30px;
 }
 
-.start-button {
+#start-button {
   background: #fffbdc;
   border: none;
   border-radius: 100px;
@@ -67,11 +77,17 @@
   transition: all 0.5s ease-in;
 }
 
-.start-button:hover {
-    background-color: #AFA490;
+#start-button:hover {
+  background-color: #AFA490;
 }
 
-.kazaki-nt {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#credit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,4 +103,10 @@
   font-weight: bold;
 
   text-decoration: none;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+#credit:hover {
+  color: #72534c;
 }
