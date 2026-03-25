@@ -81,6 +81,34 @@ body {
   background-color: #AFA490;
 }
 
+.card {
+  height: fit-content;
+  width: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 25px 0;
+  gap: 25px;
+
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 25px;
+}
+
+.cardhead {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.cardpic {
+  width: 350px;
+  height: 248px;
+}
+
 footer {
   display: flex;
   justify-content: center;
