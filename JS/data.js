@@ -10,7 +10,7 @@ export const story = [
     }, 
     {
         type: "story", 
-        image: ".//src/Image/Scene 1.png", 
+        image: "../nitto/src/Image/Scene 1.png", 
         message: [
             {
                 text: "b", 
@@ -37,7 +37,7 @@ export const story = [
     }, 
     {
         type: "choice", 
-        image: ".//src/Image/Scene 2.png", 
+        image: "../nitto/src/Image/Scene 2.png", 
         message: [
             {
                 text: "b", 
@@ -88,7 +88,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 1", 
-        image: ".//src/Image/Scene 3.png", 
+        image: "../nitto/src/Image/Scene 3.png", 
         message: [
             {
                 text: "b", 
@@ -117,7 +117,7 @@ export const story = [
     {
         type: "story", 
         head: "ห้องที่ 1", 
-        image: ".//src/Image/Scene 3.png", 
+        image: "../src/Image/Scene 3.png", 
         message: [
             {
                 text: "b", 
@@ -182,7 +182,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 2", 
-        image: ".//src/Image/Scene 4.png", 
+        image: "../nitto/src/Image/Scene 4.png", 
         message: [
             {
                 text: "b", 
@@ -224,7 +224,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 3", 
-        image: ".//src/Image/Scene 5.png", 
+        image: "../nitto/src/Image/Scene 5.png", 
         message: [
             {
                 text: "nor", 
@@ -270,7 +270,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 4", 
-        image: ".//src/Image/Scene 6.png", 
+        image: "../nitto/src/Image/Scene 6.png", 
         message: [
             {
                 text: "nor", 
@@ -324,7 +324,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 5", 
-        image: ".//src/Image/Scene 7.png", 
+        image: "../nitto/src/Image/Scene 7.png", 
         message: [
             {
                 text: "nor", 
@@ -374,7 +374,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 6", 
-        image: ".//src/Image/Scene 8.png", 
+        image: "../nitto/src/Image/Scene 8.png", 
         message: [
             {
                 text: "nor", 
@@ -461,7 +461,7 @@ export const story = [
     {
         type: "choice", 
         head: "ห้องที่ 7", 
-        image: ".//src/Image/Scene 9.png", 
+        image: "../nitto/src/Image/Scene 9.png", 
         message: [
             {
                 text: "nor", 
@@ -499,7 +499,7 @@ export const story = [
     }, 
     {
         type: "choice", 
-        image: ".//src/Image/Scene 10.png", 
+        image: "../nitto/src/Image/Scene 10.png", 
         message: [
             {
                 text: "nor", 
@@ -544,6 +544,6 @@ export const story = [
     }, 
     {
         type: "story", 
-        image: ".//src/Image/ฉากจบ.png"
+        image: "../nitto/src/Image/ฉากจบ.png"
     }, 
 ]

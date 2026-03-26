@@ -1,4 +1,4 @@
-export const result = [
+const result = [
     {
         type: "result1", 
         head: "ระดับความเครียดของคุณคือ", 
@@ -40,3 +40,10 @@ export const result = [
         ]
     }
 ]
+
+export function getResult(score) {
+  if (score <= 19) return result[0];
+  if (score <= 26) return result[1];
+  if (score <= 33) return result[2];
+  return result[3];
+}

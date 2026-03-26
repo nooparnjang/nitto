@@ -1,9 +1,9 @@
 // ---- Import Data ----
 
-import { story } from "../JS/data.js";
-import { result } from "../JS/result.js";
+import { story } from "./data.js";
+import { getResult } from "./result.js";
 
-// ---- Start Button & Credit ----
+// ---- Credit ----
 
 let cre = document.getElementById("credit");
 let str = document.getElementById("start-button");
@@ -13,11 +13,52 @@ cre.addEventListener("click", credit);
 str.addEventListener("click", start);
 
 function credit() {
-    window.open("https://x.com/kazaki_nt", "_blank");
+  window.open("https://x.com/kazaki_nt", "_blank");
 }
 
+// ---- Credit ----
+
+// -------- ALL STORY --------
+
+// ---- States ----
+let currentStep = 0;
+let totalScore = 0;
+
+let isTyping = false;
+let skipTyping = false;
+
+const allwei = story.length;
+
+// ---- Elements ----
+let full = document.querySelector(".fullpage");
+let card = document.createElement("div");
+card.className = "card";
+let cardhead = document.createElement("div");
+cardhead.className = "cardhead";
+let exhead = document.createElement("div");
+exhead.className = "excardhead";
+let pic = document.createElement("img");
+pic.className = "cardpic";
+let textframe = document.createElement("div");
+textframe.className = "textframe";
+let nor = document.createElement("div");
+nor.className = "nortext";
+let b = document.createElement("div");
+b.className = "btext";
+let choiceframe = document.createElement("div");
+choiceframe.className = "choiceframe";
+let choicebox = document.createElement("div");
+choicebox.className = "choicebox";
+let choice = document.createElement("div");
+choice.className = "choice";
+
 function start() {
-    document.querySelector(".fullpage").innerHTML = "";
+    full.innerHTML = "";
+
+    nor.innerHTML = story[0].message[0].content;
+    textframe.appendChild(nor);
+    card.appendChild(textframe);
+    full.appendChild(card);
 }
 
 // ---- Music ----
@@ -42,6 +83,3 @@ function enableAutoPlay() {
 
 document.addEventListener("click", enableAutoPlay);
 document.addEventListener("touchstart", enableAutoPlay);
-
-// ----------------------------------------------------------
-
