@@ -109,6 +109,17 @@ body {
   height: 248px;
 }
 
+.textframe {
+  width: 305px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 footer {
   display: flex;
   justify-content: center;
