@@ -17,7 +17,8 @@ header, footer {
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 80vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 
@@ -118,6 +119,74 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+.nortext {
+  width: 305px;
+  height: fit-content;
+
+  color: #FFFBDC;
+  font-size: 1em;
+
+  text-align: left;
+}
+
+.btext {
+  width: 305px;
+  height: fit-content;
+
+  color: #FFFBDC;
+  font-weight: bold;
+  font-size: 1em;
+
+  text-align: center;
+}
+
+.choiceframe {
+  width: 304px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.choicebox {
+  width: 304px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.choice {
+  width: 147px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 20%);
+  border-radius: 5px;
+  border: 1px solid #FFFBDC;
+  box-sizing: border-box;
+
+  color: white;
+  font-size: 1em;
 }
 
 footer {
