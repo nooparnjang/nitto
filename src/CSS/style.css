@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Anuphan", sans-serif;
+
+  cursor: default;
 }
 
 header, footer {
@@ -75,7 +77,7 @@ body {
   font-size: 1.5em;
   font-weight: 700;
 
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 #start-button:hover {
@@ -99,16 +101,18 @@ body {
   border-radius: 25px;
 }
 
+.cardhead, .excardhead {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
 .cardhead {
   color: white;
-  font-weight: bold;
-  font-size: 1.5em;
 }
 
 .excardhead {
   color: #FFFBDC;
-  font-weight: bold;
-  font-size: 1.5em;
 }
 
 .cardpic {
@@ -132,7 +136,7 @@ body {
   height: fit-content;
 
   color: #FFFBDC;
-  font-size: 1em;
+  font-size: 0.95em;
 
   text-align: left;
 }
@@ -143,7 +147,7 @@ body {
 
   color: #FFFBDC;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.95em;
 
   text-align: center;
 }
@@ -193,6 +197,16 @@ body {
 
   color: white;
   font-size: 1em;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in;
+}
+
+.choice:hover {
+  background-color: rgba(255, 255, 255, 40%);
+  border: 1px solid FFF6B2;
 }
 
 footer {
@@ -217,7 +231,7 @@ footer {
   font-weight: bold;
 
   text-decoration: none;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   cursor: pointer;
 }
 
