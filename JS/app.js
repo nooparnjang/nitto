@@ -293,11 +293,6 @@ function showResult() {
     textframe.appendChild(el);
   });
 
-  card.appendChild(textframe);
-
-  full.appendChild(card);
-  fadeScene(card); // ✅ scene fade
-
   let resetBtn = document.createElement("button");
   resetBtn.className = "start-button";
   resetBtn.innerText = "Play again";
@@ -305,6 +300,11 @@ function showResult() {
   resetBtn.onclick = resetGame;
 
   card.appendChild(resetBtn);
+
+  card.appendChild(textframe);
+
+  full.appendChild(card);
+  fadeScene(card); // ✅ scene fade
 }
 
 // ---- Music ----
