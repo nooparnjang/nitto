@@ -84,6 +84,32 @@ body {
   background-color: #AFA490;
 }
 
+.reset-button {
+  background: #fffbdc;
+  border: none;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  aspect-ratio: 140/50;
+  position: relative;
+
+  margin-top: 20px;
+
+  color: #442f2a;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  transition: all 0.3s ease-in;
+}
+
+.reset-button:hover {
+  background-color: #AFA490;
+}
+
 .card {
   height: fit-content;
   width: 350px;

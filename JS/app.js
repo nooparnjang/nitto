@@ -294,16 +294,15 @@ function showResult() {
   });
 
   let resetBtn = document.createElement("button");
-  resetBtn.className = "start-button";
+  resetBtn.className = "reset-button";
   resetBtn.innerText = "Play again";
 
   resetBtn.onclick = resetGame;
 
-  card.appendChild(resetBtn);
-
   card.appendChild(textframe);
 
   full.appendChild(card);
+  full.appendChild(resetBtn);
   fadeScene(card); // ✅ scene fade
 }
 
