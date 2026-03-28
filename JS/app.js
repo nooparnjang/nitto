@@ -249,6 +249,15 @@ function nextStep() {
   renderStep();
 }
 
+// ---- Reset ----
+function resetGame() {
+  currentStep = 0;
+  totalScore = 0;
+  started = false;
+
+  location.reload(); // simplest + safest
+}
+
 // ===== RESULT =====
 function showResult() {
   const res = getResult(totalScore);
@@ -288,6 +297,14 @@ function showResult() {
 
   full.appendChild(card);
   fadeScene(card); // ✅ scene fade
+
+  let resetBtn = document.createElement("button");
+  resetBtn.className = "start-button";
+  resetBtn.innerText = "Play again";
+
+  resetBtn.onclick = resetGame;
+
+  card.appendChild(resetBtn);
 }
 
 // ---- Music ----
